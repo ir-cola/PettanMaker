@@ -1,0 +1,45 @@
+#/**===========================================================================
+#
+# File   : unity LFS [.gitattributes]
+#
+# Author : Hayato Otsuki
+# Date   : 2026/4/22
+# -----------------------------------------------------------------------------
+#
+# ===========================================================================**/
+
+# ======================
+# デフォルト：改行コードを自動正規化
+# ======================
+* text=auto
+
+# ======================
+# Unity YAML ファイル
+# テキストとして扱いマージ可能にする
+# ※ UnityYAMLMerge を使うことでシーン・プレハブのコンフリクトを軽減
+# ======================
+*.cs            diff=csharp text
+*.shader        text
+*.mat           merge=unityyamlmerge eol=lf
+*.anim          merge=unityyamlmerge eol=lf
+*.unity         merge=unityyamlmerge eol=lf
+*.prefab        merge=unityyamlmerge eol=lf
+*.asset         merge=unityyamlmerge eol=lf
+*.meta          merge=unityyamlmerge eol=lf
+*.controller    merge=unityyamlmerge eol=lf
+
+# ======================
+# Git LFS：大容量バイナリ
+# ※ バイナリファイルはdiff・mergeが取れないためLFSで管理
+# ======================
+
+
+# 音声
+
+# 画像・テクスチャ
+
+# 3Dモデル
+
+# 動画
+
+# フォント

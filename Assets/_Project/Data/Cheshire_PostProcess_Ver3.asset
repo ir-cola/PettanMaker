@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Cheshire_PostProcess_Ver3
+  m_EditorClassIdentifier:
+  components:
+  - {fileID: 5555000000000000501}
+--- !u!114 &5555000000000000501
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2d8be039f74f7ebeb517f5863c4af9, type: 3}
+  m_Name: StorybookPrintVolume
+  m_EditorClassIdentifier: Assembly-CSharp::StorybookPrintVolume
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.84
+  toneSteps:
+    m_OverrideState: 1
+    m_Value: 6
+  colorRetention:
+    m_OverrideState: 1
+    m_Value: 0.44
+  inkStrength:
+    m_OverrideState: 1
+    m_Value: 0.64
+  edgeThreshold:
+    m_OverrideState: 1
+    m_Value: 0.105
+  hatchStrength:
+    m_OverrideState: 1
+    m_Value: 0.32
+  printOffset:
+    m_OverrideState: 1
+    m_Value: 0.75
+  paperGrain:
+    m_OverrideState: 1
+    m_Value: 0.065
+  crimsonAccent:
+    m_OverrideState: 1
+    m_Value: 0.58
+  inkColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.095, g: 0.07, b: 0.12, a: 1}
+  paperColor:
+    m_OverrideState: 1
+    m_Value: {r: 1.03, g: 0.91, b: 0.72, a: 1}
+  shadowColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.28, g: 0.31, b: 0.42, a: 1}
+  crimsonColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.72, g: 0.055, b: 0.095, a: 1}

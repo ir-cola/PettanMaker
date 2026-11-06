@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a178883b8fdfd4fb751e89b8cc8f95, type: 3}
+  m_Name: Enemy01Settings
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy01Settings
+  MaxHP: 100
+  DetectionRange: 10
+  AttackRange: 1.5
+  AttackInterval: 1.5
+  AttackDamage: 1
+  DamageType: 1
+  HitStopDuration: 0.08
+  HitStopFrozenSpeed: 0
+  HitStopFrozenSpeedLight: 0.2
+  HitScaleByDamage: 1
+  HitReferenceDamage: 20
+  HitScaleRange: {x: 0.5, y: 2}
+  HitSquashEnabled: 1
+  HitSquashAlong: 1
+  HitSquashPerp: 1.18
+  HitSquashVertical: 1.08
+  HitSquashDuration: 0.2
+  HitSquashMinStrength: 0.35
+  HitShakeAmplitude: 0.15
+  HitShakeFrequency: 20
+  HitShakeDuration: 0.5
+  Knockback: 0.8
+  KnockbackDuration: 0.12
+  AlertDuration: 1
+  PlayerDetectedSE: {fileID: 8300000, guid: e8842dcde4552aa4aac76fb3a91c1654, type: 3}
+  PlayerDetectedSEVolume: 1
+  DefeatedSE: {fileID: 8300000, guid: f4454ddd9bc8f004a90e0775ccfabf78, type: 3}
+  DefeatedSEVolume: 1
+  SpeedParameter: Speed
+  AlertParameter: IsAlert
+  TurnSpeed: 360
+  TurnSmoothTime: 0.12
+  TurnBankAngle: 0
+  PreAlertWanderEnabled: 1
+  PreAlertWanderSpeed: 1.2
+  PreAlertWanderRadius: 4
+  PreAlertWanderInterval: 2.5
+  PreAlertWanderArriveDistance: 0.3
+  PreAlertWanderTurnSpeed: 180
+  PreAlertWanderTurnAngle: 35
+  PreAlertWanderMinStepRatio: 0.55
+  DebugEnabled: 0
+  ShowRangeRings: 1
+  ShowHitboxes: 1
+  ShowHUD: 1
+  ThrowRange: 14
+  KeepDistanceMin: 5
+  RunSpeed: 3.5
+  WalkSpeed: 1.6
+  IdleSwapInterval: 2.5
+  ProjectilePrefabs:
+  - {fileID: 3379715144453322438, guid: 67eff66a904cc28479df9cc801500ace, type: 3}
+  ProjectileSpeed: 16
+  AimHeightOffset: 1.5
+  LaunchAngle: 45
+  ProjectileSpin: 270
+  ProjectileThrowSE: {fileID: 8300000, guid: b4826a84d30a37e4b93e5cc3dcf4ab3e, type: 3}
+  ProjectileThrowSEVolume: 1
+  ProjectileHitSE: {fileID: 0}
+  ProjectileHitSEVolume: 1
+  AttackClipFPS: 30
+  CarryEndFrame: 16
+  ThrowFrame: 28
+  CarryArcHeight: 1
+  CarryArcOutward: 1.5
+  FindingDuration: 1
+  WindupDuration: 1
+  ThrowRecovery: 0.3
+  AttackCooldown: 2
+  ParamIdleIndex: IdleIndex
+  TriggerFinding: TriggerFinding
+  TriggerAttack0: TriggerAttack0
+  BoolIsAttacking: IsAttacking

@@ -1,0 +1,55 @@
+Stamp VFX 納品データ
+
+■内容
+以下のエフェクトPrefabを含みます。
+
+1. VFX_StampSpawn_Portal_Common
+スタンプ出現時のワープホールエフェクトです。
+
+2. VFX_StampImpact_Miss_Common
+スタンプが空振りした時の着地エフェクトです。
+
+■再生方法
+Prefabを任意のワールド座標にInstantiateしてください。
+各Prefab内のVisualEffectは OnPlay で再生される想定です。
+
+必要に応じて、Instantiate後に以下のどちらかで再生してください。
+
+VisualEffect.Play();
+
+または
+
+VisualEffect.SendEvent("OnPlay");
+
+■想定呼び出しタイミング
+VFX_StampSpawn_Portal_Common：
+スタンプ生成時、またはスタンプ出現演出開始時。
+
+VFX_StampImpact_Miss_Common：
+スタンプ着地時、かつ敵に命中していない場合。
+
+■向き
+VFX_StampSpawn_Portal_Common：
+スタンプの出現方向に合わせて回転させてください。
+
+VFX_StampImpact_Miss_Common：
+床面に出す想定です。
+基本は Quaternion.identity で問題ありません。
+
+■位置調整
+床面に埋まる場合は、Y方向に 0.03〜0.08 程度上げてください。
+
+例：
+spawnPosition + Vector3.up * 0.05f
+
+■削除タイミング
+各Prefabはループなしの一回再生想定です。
+再生後、1〜2秒程度でDestroyしてください。
+
+推奨：
+Portal：0.8〜1.2秒
+Miss Impact：1.0〜1.5秒
+
+■注意
+Prefab、VFXGraph、Material、Texture、Meshを同梱しています。
+UnityPackageは Include dependencies をONにしてExportしています。

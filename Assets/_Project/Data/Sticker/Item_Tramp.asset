@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ca9f1399aeb1b449bc8570be403ffa, type: 3}
+  m_Name: Item_Tramp
+  m_EditorClassIdentifier: Assembly-CSharp::StickerData
+  stickerName: "\u30C8\u30E9\u30F3\u30D7\u30B7\u30FC\u30EB"
+  stickerType: 1
+  thumbnail: {fileID: -686794969, guid: eea9b529801556442b0b9ae6c6aabffe, type: 3}
+  decalTexture: {fileID: 2800000, guid: eea9b529801556442b0b9ae6c6aabffe, type: 3}
+  equipPrefab: {fileID: 0}
+  description: "HP\u4E0A\u9650\uFF0B\uFF11"
+  descriptionSprite: {fileID: 21300000, guid: 05b8fec913fd96945b392846696d0f8f, type: 3}

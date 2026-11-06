@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a984677ca9421499a7681c49074eca, type: 3}
+  m_Name: B1_CameraSettings_Entrance
+  m_EditorClassIdentifier: Assembly-CSharp::B1_EntranceCameraSettings
+  lookHeight: 2
+  fog:
+    fogColor: {r: 0.72, g: 0.55, b: 0.95, a: 1}
+    heightBase: -1
+    heightFalloff: 0.18
+    heightStrength: 3
+    distanceStart: 3
+    distanceEnd: 42
+    distanceStrength: 1
+    restoreFogOnFinish: 1
+  ui:
+    showBossName: 1
+    titleDuration: 4
+    bossName: "\u30C1\u30A7\u30B7\u30E3\u306D\u3053"
+    bossNameTexture: {fileID: 2800000, guid: 34eebd351535522499129e41020672a2, type: 3}
+    bossNameStickerMaterial: {fileID: 2100000, guid: b1015ea17f4d4a0fa662c087c2f2d8aa, type: 2}
+    pasteBossNameTexture: 1
+    stickerFromDirection: {x: -1, y: 1}
+    stickerPasteDuration: 1.8
+    healthStickerPasteDuration: 2
+    stickerPeel: 0.2
+    stickerOvershoot: 1.12
+    stickerTilt: 9
+    stickerColor: {r: 1, g: 1, b: 1, a: 1}
+    preserveStickerAspect: 1
+    stickerSettleEffect: 1
+    stickerSettleDuration: 0.28
+    stickerSettleScale: 0.09
+    stickerSettleShake: 7
+    titleAnchor: {x: 0.5, y: 0.5}
+    titleAreaWidth: 0.8
+    titleAreaHeight: 0.25
+    titlePixelOffset: {x: 0, y: -300}
+    titleScale: {x: 2, y: 2}
+    titleRotation: 0
+    randomTilt: 0
+    randomTiltAngle: 8
+    typewriter: 1
+    typewriterCharsPerSecond: 10
+    popIn: 1
+    popInScale: 1.35
+    popInDuration: 0.5
+    shake: 0
+    shakeIntensity: 6
+    wobble: 0
+    wobbleAngle: 4
+    wobbleSpeed: 2
+    showConvergenceLines: 0
+    convergenceLineCount: 44
+    convergenceLineColor: {r: 1, g: 1, b: 1, a: 0.55}
+    showDistortionOverlay: 0
+    distortionOverlayMaterial: {fileID: 0}
+  letterbox:
+    enabled: 1
+    barColor: {r: 0, g: 0, b: 0, a: 1}
+    barHeight: 0.115
+    enterDuration: 0.45
+    exitDuration: 0.35
+    showAccentLine: 1
+    accentColor: {r: 0.85, g: 0.67, b: 0.28, a: 0.9}
+    accentThickness: 3
+  shockwave:
+    count: 5
+    interval: 0.16
+    heightOffset: 0
+    use3D: 1
+    material3D: {fileID: 2100000, guid: 880f9797c2cb0d74aa3e1c56bfebce30, type: 2}
+    scale3D: {x: 1, y: 0.65, z: 1}
+    duration: 0.9
+    strength: 0.22
+    startScale: 2.5
+    endScale: 18
+    ringWidth: 0.3
+    rimColor: {r: 0.82, g: 0.6, b: 1, a: 1}
+    rimIntensity: 2
+  roarShake:
+    enabled: 1
+    duration: 0.6
+    intensity: 1
+    frequency: 22
+  colorDrain:
+    enabled: 1
+    drainIn: 0.08
+    hold: 0.12
+    release: 0.35
+    peak: 1
+    maxDesaturation: 1
+    darken: 0.12
+    tint: {r: 0.75, g: 0.72, b: 0.85, a: 1}
+    tintAmount: 0.25
+  reveal:
+    useDissolveReveal: 1
+    sequence:
+      smoke: 1
+      cloakFadeIn: 1
+      transparentHold: 1
+      dissolve: 1
+      combatStartIdle: 3
+      dissolveCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    cloakMaterial: {fileID: 0}
+    dissolveNoiseScale: 6
+    ghostQueueOffset: 50
+    smoke:
+      material: {fileID: 2100000, guid: 2690fa38f7242e5469ae08c7c296d07b, type: 2}
+      mesh: {fileID: 2960515714562822414, guid: ba026fb2b314c1a42b076c7c5862c1e8, type: 3}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      overrideAlpha: 0
+      alpha: 1
+      alphaColorProperty: _BaseColor
+      emitRate: 200
+      duration: 5
+      startBurst: 4
+      maxParticles: 800
+      lifetime: {x: 1.2, y: 1.2}
+      startScale: {x: 30, y: 40}
+      emitShape: 0
+      radius: 4.5
+      radiusThickness: 1
+      heightOffset: 0.3
+      speed: {x: 0, y: 0}
+      gravity: 0
+      rotateSpeed: 0.6
+      alphaFade: 1
+      noiseStrength: 0.5
+      noiseFrequency: 0.35
+      noiseScrollSpeed: 0.3
+      drag: 1.5
+      endTint: {r: 0.78, g: 0.73, b: 0.88, a: 1}

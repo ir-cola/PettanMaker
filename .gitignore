@@ -1,0 +1,88 @@
+#/**===========================================================================
+#
+# File   : unity ignore [.gitignore]
+#
+# Author : Hayato Otsuki
+# Date   : 2026/4/22
+# -----------------------------------------------------------------------------
+#
+# ===========================================================================**/
+
+# ======================
+# Unity 自動生成フォルダ
+# ※ これらは各自の環境で自動生成されるため除外
+# ======================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+[Pp]rofiler[Cc]aptures/
+
+# ======================
+# ユーザー個別設定
+# ※ 各自のエディタ設定のため除外
+# ======================
+[Uu]ser[Ss]ettings/
+
+
+# ======================
+# Visual Studio / Rider
+# ======================
+.vs/
+ExportedObj/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ======================
+# OS 生成ファイル
+# ======================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ======================
+# ビルド成果物
+# ======================
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# ======================
+# キャッシュ・一時ファイル
+# ======================
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+Assets/StreamingAssets/aa.meta
+Assets/StreamingAssets/aa/
+Assets/Screenshots/
+.claude/

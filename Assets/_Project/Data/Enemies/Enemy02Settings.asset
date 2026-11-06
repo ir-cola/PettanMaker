@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d68a6d628efd3a4d80e6d4b340ba38d, type: 3}
+  m_Name: Enemy02Settings
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy02Settings
+  MaxHP: 100
+  DetectionRange: 10
+  AttackRange: 1.5
+  AttackInterval: 1.5
+  AttackDamage: 1
+  DamageType: 1
+  HitStopDuration: 0.08
+  HitStopFrozenSpeed: 0
+  HitStopFrozenSpeedLight: 0.2
+  HitScaleByDamage: 1
+  HitReferenceDamage: 20
+  HitScaleRange: {x: 0.5, y: 2}
+  HitSquashEnabled: 1
+  HitSquashAlong: 0.78
+  HitSquashPerp: 1.18
+  HitSquashVertical: 1.08
+  HitSquashDuration: 0.2
+  HitSquashMinStrength: 0.35
+  HitShakeAmplitude: 0.15
+  HitShakeFrequency: 20
+  HitShakeDuration: 0.5
+  Knockback: 0.8
+  KnockbackDuration: 0.12
+  AlertDuration: 1
+  PlayerDetectedSE: {fileID: 8300000, guid: e8842dcde4552aa4aac76fb3a91c1654, type: 3}
+  PlayerDetectedSEVolume: 1
+  DefeatedSE: {fileID: 8300000, guid: f4454ddd9bc8f004a90e0775ccfabf78, type: 3}
+  DefeatedSEVolume: 1
+  SpeedParameter: Speed
+  AlertParameter: IsAlert
+  TurnSpeed: 360
+  TurnSmoothTime: 0.12
+  TurnBankAngle: 0
+  PreAlertWanderEnabled: 1
+  PreAlertWanderSpeed: 1.2
+  PreAlertWanderRadius: 4
+  PreAlertWanderInterval: 2.5
+  PreAlertWanderArriveDistance: 0.3
+  PreAlertWanderTurnSpeed: 180
+  PreAlertWanderTurnAngle: 35
+  PreAlertWanderMinStepRatio: 0.55
+  DebugEnabled: 0
+  ShowRangeRings: 1
+  ShowHitboxes: 1
+  ShowHUD: 1
+  IdleSwapInterval: 2.5
+  FleeSpeedMultiplier: 1.6
+  FleeStep: 6
+  FleeRepathInterval: 0.4
+  FleeWanderAngle: 55
+  WalkSE: {fileID: 8300000, guid: 0d292a8a5df4ff045a92b3f282d2436b, type: 3}
+  WalkSEVariations:
+  - {fileID: 8300000, guid: 3796a296052a049448f348f5773cb420, type: 3}
+  - {fileID: 8300000, guid: de4fc1191e453094c8c2ccb7e24bd0a3, type: 3}
+  WalkSEVolume: 1
+  WalkSEInterval: 0.4
+  WalkSEPlaybackDuration: 0.3
+  ParamIdleIndex: IdleIndex

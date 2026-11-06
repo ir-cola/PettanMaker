@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0646be98aebe43b3a43fcbd6373b500f, type: 3}
+  m_Name: PlayerSettings
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSettings
+  Speed: 9
+  Gravity: -9.81
+  RotationSpeed: 10
+  MoveDrag: 7
+  WalkFloor: 0.3
+  InertiaDecay: 6
+  QuickTurnSpeed: 720
+  MediumTurnSpeed: 540
+  RotEaseSpeed: 8
+  AttackRecoveryTime: 0.4
+  ChargeMoveSpeedMul: 0.4
+  DodgeDistance: 2.5
+  DodgeMultiplier: 1.5
+  DodgeCooldown: 0.5
+  JumpHeight: 1.8
+  GroundCheckDistance: 0.3
+  BufferTime: 0.2

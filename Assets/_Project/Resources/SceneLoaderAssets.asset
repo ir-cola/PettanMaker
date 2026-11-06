@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e862488a72207d418e1e9170e3462ae, type: 3}
+  m_Name: SceneLoaderAssets
+  m_EditorClassIdentifier: Assembly-CSharp::SceneLoaderAssets
+  background: {fileID: 21300000, guid: 8468853cd120d2646add009dbdf3b382, type: 3}
+  character: {fileID: -1653743121, guid: e631f09f6d543894293b1c9ea5f10881, type: 3}
+  font: {fileID: 11400000, guid: e14b4c35aab20314a8babd5ce3e1aace, type: 2}
+  polkaShader: {fileID: 4800000, guid: dd8a41373bf06f842ab3dec012bad7c1, type: 3}
+  transitionPeelSe: {fileID: 8300000, guid: bb31b0780a2c0e34d8c8bcb902c27e80, type: 3}
+  transitionPasteSe: {fileID: 8300000, guid: e569ac70d4078e3418acbe7c8153f509, type: 3}

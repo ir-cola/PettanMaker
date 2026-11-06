@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdf570e4eea745439689aad70e61442, type: 3}
+  m_Name: B1_EffectSettings
+  m_EditorClassIdentifier: Assembly-CSharp::B1_EffectSettings
+  Charge:
+    EmitRadiusStart: 2
+    EmitRadiusEnd: 0.6
+    InwardSpeedStart: 4
+    InwardSpeedEnd: 20
+    EmitRateStart: 20
+    EmitRateEnd: 120
+    ColorOuter: {r: 0.13578606, g: 0, b: 1, a: 1}
+    ColorInner: {r: 1, g: 0.95, b: 0.35, a: 1}
+    BurstCount: 120
+    BurstSpeedMin: 10
+    BurstSpeedMax: 24
+    ParticleMaterial: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  TailCharge:
+    EmitRadiusStart: 1.8
+    EmitRadiusEnd: 0.5
+    InwardSpeedStart: 4
+    InwardSpeedEnd: 20
+    EmitRateStart: 18
+    EmitRateEnd: 100
+    ColorOuter: {r: 0.35, g: 0.1, b: 1, a: 1}
+    ColorInner: {r: 0.7, g: 0.5, b: 1, a: 1}
+    BurstCount: 120
+    BurstSpeedMin: 10
+    BurstSpeedMax: 24
+    ParticleMaterial: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  LandingImpact:
+    RingCount: 80
+    RingSpeed: 10
+    RingLifetime: 0.55
+    RingColorHead: {r: 1, g: 0.85, b: 0.3, a: 1}
+    RingColorTail: {r: 1, g: 0.45, b: 0.1, a: 0}
+    DustCount: 55
+    DustSpeedMin: 2.5
+    DustSpeedMax: 9
+    DustColor: {r: 0.72, g: 0.57, b: 0.32, a: 0.85}
+    ParticleMaterial: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  RushWind:
+    EmitWidth: 1.4
+    EmitHeight: 1.8
+    EmitDepth: 0.2
+    SpeedMin: 14
+    SpeedMax: 26
+    EmitRate: 120
+    LifetimeMin: 0.1
+    LifetimeMax: 0.22
+    VelocityScale: 0.12
+    SpreadAmount: 0
+    ColorHead: {r: 1, g: 0, b: 0.6588235, a: 1}
+    ColorMid: {r: 0.040236473, g: 0, b: 1, a: 0.8}
+    ParticleMaterial: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  EyeRush:
+    TrailTime: 1
+    TrailWidthStart: 0.16
+    TrailWidthEnd: 0
+    TrailColorHead: {r: 1, g: 0.15, b: 0.05, a: 1}
+    TrailColorTail: {r: 1, g: 0.35, b: 0.1, a: 0}
+    RushMaterial: {fileID: 2100000, guid: e5197089259e96e42a7176ee4bc705ea, type: 2}
+    TrailMaterial: {fileID: 2100000, guid: b0142b2ae9a087547aa5601cca25e276, type: 2}
+  LandingSquash:
+    Enabled: 1
+    SquashScale: {x: 1.3, y: 0.6, z: 1.3}
+    Duration: 0.25
+    ReboundCycles: 3
+  ChargeLaunchShockwave:
+    enabled: 1
+    positionOffset: {x: 0, y: 1.6, z: 0}
+    duration: 0.55
+    startScale: 1.5
+    endScale: 13
+    scale3D: {x: 1, y: 0.55, z: 1}
+    ringWidth: 0.32
+    strength: 0.2
+    refraction: 0.06
+    rimColor: {r: 1.6, g: 0.9, b: 0.35, a: 1}
+    rimIntensity: 2.6
+    material: {fileID: 2100000, guid: 880f9797c2cb0d74aa3e1c56bfebce30, type: 2}
+  TailLandShockwave:
+    enabled: 1
+    positionOffset: {x: 0, y: 1, z: 0}
+    duration: 0.5
+    startScale: 1
+    endScale: 9
+    scale3D: {x: 10, y: 4.5, z: 10}
+    ringWidth: 0.9
+    strength: 1
+    refraction: 0.298
+    rimColor: {r: 1.8691097, g: 1.8691097, b: 1.8691097, a: 1}
+    rimIntensity: 2.2
+    material: {fileID: 2100000, guid: 880f9797c2cb0d74aa3e1c56bfebce30, type: 2}
+  ScratchFinisherShockwave:
+    enabled: 1
+    positionOffset: {x: 0, y: 1.4, z: 1.5}
+    duration: 0.5
+    startScale: 1.2
+    endScale: 11
+    scale3D: {x: 5, y: 3, z: 5}
+    ringWidth: 0.9
+    strength: 1
+    refraction: 0.3
+    rimColor: {r: 1.6, g: 0.4, b: 0.4, a: 1}
+    rimIntensity: 2.4
+    material: {fileID: 2100000, guid: 880f9797c2cb0d74aa3e1c56bfebce30, type: 2}
+  WavePassShockwave:
+    enabled: 1
+    positionOffset: {x: 0, y: 1, z: 0}
+    duration: 0.45
+    startScale: 1.2
+    endScale: 8
+    scale3D: {x: 1, y: 0.5, z: 1}
+    ringWidth: 0.3
+    strength: 1
+    refraction: 0.3
+    rimColor: {r: 1.4, g: 0.75, b: 0.6, a: 1}
+    rimIntensity: 2.2
+    material: {fileID: 2100000, guid: 880f9797c2cb0d74aa3e1c56bfebce30, type: 2}
+  ManaBurst:
+    BurstVFXPrefab: {fileID: 8710198996951492901, guid: e0aa3d7dad5aab947af00a151251cab9, type: 3}
+    BurstColor: {r: 0.7, g: 0.5, b: 1, a: 1}
+    ScarMaterial: {fileID: 2100000, guid: ba6675f28ae37da43b352c4fb7499b50, type: 2}
+    ScarDuration: 4
+    EnableManaBolt: 1
+    BoltMaterial: {fileID: 2100000, guid: 710c691939c37bd4d8df266622cfcb52, type: 2}
+    RiftMaterial: {fileID: 2100000, guid: 5cd57769086a65a4d8b08182dcd1087d, type: 2}
+    BoltColor: {r: 0.7, g: 0.5, b: 1, a: 1}
+    BoltHeight: 14
+    BoltWidth: 4
+    BoltStrikeDuration: 0.12
+    RiftDuration: 1.2
+    FinisherBoltScale: 1.8
+    BoltImpactYOffset: 0
+    EnableImpactSparks: 1
+    ImpactSphereMaterial: {fileID: 2100000, guid: 43412d589080953448a89fb1cc5c96ca, type: 2}
+    ImpactSparkMaterial: {fileID: 2100000, guid: 710c691939c37bd4d8df266622cfcb52, type: 2}
+    ImpactSparkColor: {r: 0.7, g: 0.5, b: 1, a: 1}
+    ImpactSphereRadiusScale: 1
+    ImpactSphereDuration: 0.35
+    ImpactSparkCount: 24
+    ImpactSparkSpeed: 8
+    ImpactSparkSize: 0.4
+    ImpactSparkDuration: 0.4
+  ScratchFinisherFlash:
+    Enabled: 1
+    Color: {r: 1, g: 0.35, b: 0.3, a: 1}
+    Intensity: 7
+    Range: 11
+    Duration: 0.2
+  ChargeLaunchFlash:
+    Enabled: 1
+    Color: {r: 1, g: 0.6, b: 0.25, a: 1}
+    Intensity: 6
+    Range: 12
+    Duration: 0.18
+  TailLandFlash:
+    Enabled: 1
+    Color: {r: 1, g: 0.7, b: 0.35, a: 1}
+    Intensity: 5
+    Range: 12
+    Duration: 0.2

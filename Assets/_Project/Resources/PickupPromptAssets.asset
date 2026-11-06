@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c87cae0aa72896499daf7a47fa5ed89, type: 3}
+  m_Name: PickupPromptAssets
+  m_EditorClassIdentifier: Assembly-CSharp::PickupPromptAssets
+  mouseIcon: {fileID: -1328135501260408545, guid: 3b054f0dd714e9e4fac5973fc8e09d6e, type: 3}
+  padIcon: {fileID: -2286509799557318557, guid: cca7ab7c046ade6408c703f356a1aab3, type: 3}
+  backSprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  font: {fileID: 11400000, guid: e14b4c35aab20314a8babd5ce3e1aace, type: 2}
+  iconMaterial: {fileID: 2100000, guid: b0328cc4e2a9d9445856b7072ed774ce, type: 2}
+  labelMaterial: {fileID: 2100000, guid: e041ffa929b484849b529889ba64f5e1, type: 2}

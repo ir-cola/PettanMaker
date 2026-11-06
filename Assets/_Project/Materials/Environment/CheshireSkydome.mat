@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CheshireSkydome
+  m_Shader: {fileID: 4800000, guid: 44dceaa7537e9d1191d8105b4c8fa29d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 1100
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MoonHaloTex:
+        m_Texture: {fileID: 2800000, guid: bf8311e4c55f7c946b3c7599e91967d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarTexA:
+        m_Texture: {fileID: 2800000, guid: 06ac3de9210a6744e92bb8bc7f9968c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarTexB:
+        m_Texture: {fileID: 2800000, guid: 9eb1e5eca4b068f4b9050b1a715a93f9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarTexC:
+        m_Texture: {fileID: 2800000, guid: ad34cbfeef16245419a093c70e6770ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarTexD:
+        m_Texture: {fileID: 2800000, guid: d49f2dd147fe53043bb4e92c1176767e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindowTexA:
+        m_Texture: {fileID: 2800000, guid: 8027b137fb35d2e4195d4f0efccee758, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindowTexB:
+        m_Texture: {fileID: 2800000, guid: ef0e5f49a6e2bb44f920083174bd9bcf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindowTexC:
+        m_Texture: {fileID: 2800000, guid: 8e87149e1c9e9d641887d0134bc5d14b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindowTexD:
+        m_Texture: {fileID: 2800000, guid: 4be2b7093a45905438ebd61a831ce62c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CloudCoverage: 0.45
+    - _CloudDensity: 0.85
+    - _CloudScale: 1
+    - _CloudSharpness: 0.6
+    - _CloudSpeed: 0.6
+    - _CrescentAngle: 130
+    - _CrescentBite: 0.55
+    - _Dissolve: 0
+    - _Exposure: 1
+    - _MidPoint: 0.35
+    - _MoonGlow: 1.2
+    - _MoonHaloScale: 7
+    - _MoonSize: 0.09
+    - _StarAmount: 0.55
+    - _StarGridScale: 14
+    - _StarIntensity: 2
+    - _StarSize: 0.35
+    - _TwinkleSpeed: 1.4
+    - _WindowAmount: 0.25
+    - _WindowCycleSpeed: 0.25
+    - _WindowDriftSpeed: 0.015
+    - _WindowGridScale: 5
+    - _WindowIntensity: 1.6
+    - _WindowSize: 0.3
+    m_Colors:
+    - _CloudLitColor: {r: 0.62, g: 0.5, b: 0.88, a: 1}
+    - _CloudShadowColor: {r: 0.14, g: 0.09, b: 0.28, a: 1}
+    - _HorizonColor: {r: 0.72, g: 0.55, b: 0.95, a: 1}
+    - _MidColor: {r: 0.24, g: 0.12, b: 0.42, a: 1}
+    - _MoonColor: {r: 1, g: 0.93, b: 0.7, a: 1}
+    - _MoonDir: {r: 0.35, g: 0.5, b: 0.6, a: 0}
+    - _MoonEdgeColor: {r: 0.95, g: 0.7, b: 0.45, a: 1}
+    - _MoonGlowColor: {r: 0.8, g: 0.6, b: 1, a: 1}
+    - _StarColor: {r: 1, g: 0.95, b: 0.85, a: 1}
+    - _WindowColor: {r: 1, g: 0.82, b: 0.45, a: 1}
+    - _ZenithColor: {r: 0.045, g: 0.025, b: 0.14, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

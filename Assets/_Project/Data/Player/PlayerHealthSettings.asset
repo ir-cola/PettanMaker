@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f818bb7882c847ad9b71085d1eb8d02b, type: 3}
+  m_Name: PlayerHealthSettings
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthSettings
+  MaxHP: 5
+  InvincibleDuration: 2
+  KnockbackDistance: 6
+  KnockbackTimings:
+  - Idle: 1
+    Ground: 0
+    Recover: 0
+  - Idle: 1.5
+    Ground: 0
+    Recover: 2
+  - Idle: 1
+    Ground: 2
+    Recover: 2
+  KnockbackRecoveryGrace: 1

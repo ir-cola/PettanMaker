@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 49b23b57f96c235419172291dd8ef9bc
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_Green01
+    second: {fileID: 2100000, guid: 37857205f6128f14d87093a67860d7c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_Green02
+    second: {fileID: 2100000, guid: 4f3c129fab3cb6848ade5cc1e15d2d18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_Green03
+    second: {fileID: 2100000, guid: 21e53c8a0d8ed3b4dbd8e59c0b934de7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_Green04
+    second: {fileID: 2100000, guid: 57d68aca7f80eaa4fb914fe4dc76bc5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_beige
+    second: {fileID: 2100000, guid: 45be4a4e60450854fba2d098f99cc827, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_brown
+    second: {fileID: 2100000, guid: 935ef53c2ee3cc34ebbf453b49a7234d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_mocha
+    second: {fileID: 2100000, guid: 28e09a1a885b3b84da35343759fbbe10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_wood
+    second: {fileID: 2100000, guid: a1ec202cc4ab99444abbe99e76220307, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Cushion_yellow
+    second: {fileID: 2100000, guid: dffc01f51399f9d49b29fe85079de0bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_BK01
+    second: {fileID: 2100000, guid: 62e214289006f8848bab16bac1fa7ce2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_BK02
+    second: {fileID: 2100000, guid: 68e8091a0921e064a82d759584370790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_blonde
+    second: {fileID: 2100000, guid: ea6e53df9be58634d9c1de238bc3c642, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_pink
+    second: {fileID: 2100000, guid: 4ac75804492f95149bd5a65d8ade08e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_red01
+    second: {fileID: 2100000, guid: 6966eeb4f780dd44d8dad3fee835d068, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_red02
+    second: {fileID: 2100000, guid: 74cff75095ad0a94ca5332bf0dc92049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Queen_skin
+    second: {fileID: 2100000, guid: e96633e4ebba80e4d821f8918b9191d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_flamingo_BK
+    second: {fileID: 2100000, guid: 22e853f4346640d4899f49d0500e5280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_flamingo_Clear
+    second: {fileID: 2100000, guid: b5553912ccd499f43a9703b6e2b7f74b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_flamingo_WH
+    second: {fileID: 2100000, guid: ded77efe0a328f54a82ddd503a0b7b5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_flamingo_pink
+    second: {fileID: 2100000, guid: 69d8c48192e60f34d82d7217499f9c81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_flamingo_yellow
+    second: {fileID: 2100000, guid: 578aafa67da6e1742aba5ac561fb0c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_hedgehog_beige
+    second: {fileID: 2100000, guid: 1487249596244894eaa99f71a823b83c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_hedgehog_brown
+    second: {fileID: 2100000, guid: 3aa5bd9e1d8258342b8ccbba21023562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_needle_SV
+    second: {fileID: 2100000, guid: 44e649e13dd523242ab04ca75f21602f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_needle_glass_blue
+    second: {fileID: 2100000, guid: 0f95d59dc1eba524793c5983d023c420, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_needle_glass_gray
+    second: {fileID: 2100000, guid: bfae0f07ae272224386c220420d1434d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_needle_glass_green
+    second: {fileID: 2100000, guid: 12f2167de2e1275439d42909e5c93dd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_needle_glass_pink
+    second: {fileID: 2100000, guid: 90d1c5dea159beb4aa228bb6c4553bcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_needle_glass_red
+    second: {fileID: 2100000, guid: e658dd40af2b3af4694c9b82c185daad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_wand_tiara_gold
+    second: {fileID: 2100000, guid: 88f984309fdecc44e96251fe76ab2757, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 2
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
