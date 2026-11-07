@@ -112,6 +112,15 @@ public class StickerBookUI : MonoBehaviour {
     [SerializeField] private float openLoopVolume = 1f;
     private AudioSource openLoopSource;
 
+    [Header("SE - 開閉")]
+    [Tooltip("シール帳を開いた瞬間に鳴らすSE。")]
+    [SerializeField] private AudioClip openSE;
+    [Tooltip("シール帳を閉じた瞬間に鳴らすSE。")]
+    [SerializeField] private AudioClip closeSE;
+    [Range(0f, 1f)]
+    [SerializeField] private float openCloseVolume = 1f;
+    private AudioSource uiOneShotSource;
+
     // 内部
     private bool        isOpen = false;
     private bool        pinPlayer = false;         // UI表示中プレイヤーを開いた瞬間の位置へ固定
@@ -250,9 +259,21 @@ public class StickerBookUI : MonoBehaviour {
       更新処理：TABで開閉（常にアクティブなので止まらない）
     =======================================================================**/
     void Update() {
+        // ESC: 開いているシール帳を閉じる (#1 メニューESCで閉じる)
+        if (isOpen && (Keyboard.current?.escapeKey.wasPressedThisFrame ?? false)) {
+            CloseBook();
+            return;
+        }
+
         bool pressed = (Keyboard.current?.tabKey.wasPressedThisFrame ?? false)
                     || (Gamepad.current?.selectButton.wasPressedThisFrame ?? false);   // View ボタン
-        if (pressed) ToggleBook();
+        if (!pressed) return;
+
+        // 冒頭演出中は開かせない (#12/#13: 冒頭動画中にTabで開くと破綻する)。
+        // すでに開いている場合は閉じる操作のみ許可。
+        if (!isOpen && StageIntroSequence.InProgress) return;
+
+        ToggleBook();
     }
 
     // UI表示中のプレイヤー位置固定。Animator 適用後 (LateUpdate) に上書きして効かせる。
@@ -294,7 +315,19 @@ public class StickerBookUI : MonoBehaviour {
         Cursor.lockState = isOpen ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible   = isOpen;
 
+        PlayUiOneShot(isOpen ? openSE : closeSE);
         UpdateOpenLoopSE();
+    }
+
+    /// <summary>本の開閉など、UIの一発SEを2Dで鳴らす。</summary>
+    private void PlayUiOneShot(AudioClip clip) {
+        if (clip == null) return;
+        if (uiOneShotSource == null) {
+            uiOneShotSource = gameObject.AddComponent<AudioSource>();
+            uiOneShotSource.playOnAwake = false;
+            uiOneShotSource.spatialBlend = 0f;
+        }
+        uiOneShotSource.PlayOneShot(clip, openCloseVolume);
     }
 
     /**=======================================================================

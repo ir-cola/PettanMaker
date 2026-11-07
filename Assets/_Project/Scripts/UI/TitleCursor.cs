@@ -97,6 +97,10 @@ public class TitleCursor : MonoBehaviour {
 
     private void Start() {
         if (!Application.isPlaying) return;   // エディタ同期は Update(SyncEditorPreview) が担当
+        // タイトルではマウスカーソルを表示する (#22: 死亡→タイトル復帰でカーソルが出ない対策。
+        // ゲーム中は Cursor.lockState=Locked / visible=false のままタイトルに戻るため、ここで解除する)
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         ResolveUICamera();
         if (menu == null || menu.Length == 0) {
             Debug.LogWarning("[TitleCursor] menu が未設定です。");

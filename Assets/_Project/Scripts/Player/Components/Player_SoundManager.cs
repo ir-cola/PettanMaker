@@ -61,6 +61,15 @@ public class Player_SoundManager : MonoBehaviour
         return Play(cue, pitchMultiplier);
     }
 
+    /// <summary>被ダメージの軽重で音を切り替える。Damage[0]=軽, Damage[1]=重。</summary>
+    public SoundHandle PlayDamage(bool heavy, float pitchMultiplier = 1f)
+    {
+        SoundCue[] damage = settings?.Damage;
+        if (damage == null || damage.Length == 0) return null;
+        int idx = heavy ? Mathf.Min(1, damage.Length - 1) : 0;
+        return Play(damage[idx], pitchMultiplier);
+    }
+
     public SoundHandle PlayHeal(float pitchMultiplier = 1f)
         => Play(settings?.Heal, pitchMultiplier);
 
@@ -71,6 +80,18 @@ public class Player_SoundManager : MonoBehaviour
 
         SoundCue cue = PickDifferent(settings.AttackHit, ref lastAttackHitIndex);
         SoundHandle handle = Play(cue, pitchMultiplier);
+        if (handle != null) lastAttackHitTime = Time.unscaledTime;
+        return handle;
+    }
+
+    /// <summary>攻撃ヒット音を、命中した敵の位置で鳴らす（音源が敵側に定位する）。</summary>
+    public SoundHandle PlayAttackHit(Vector3 position, float pitchMultiplier = 1f)
+    {
+        if (settings == null || Time.unscaledTime - lastAttackHitTime < settings.AttackHitMinInterval)
+            return null;
+
+        SoundCue cue = PickDifferent(settings.AttackHit, ref lastAttackHitIndex);
+        SoundHandle handle = PlayAt(cue, position, pitchMultiplier);
         if (handle != null) lastAttackHitTime = Time.unscaledTime;
         return handle;
     }
@@ -244,6 +265,24 @@ public class Player_SoundManager : MonoBehaviour
             Loop = loop,
             LoopStartSeconds = loopStartSeconds,
             LoopEndSeconds = loopEndSeconds,
+            ObjectName = "Player_OneShotSE"
+        });
+    }
+
+    /// <summary>指定ワールド座標で一度だけ鳴らす（追従なし。攻撃ヒット音を敵位置で鳴らす等）。</summary>
+    public SoundHandle PlayAt(SoundCue cue, Vector3 position, float pitchMultiplier = 1f)
+    {
+        if (settings == null || cue?.Clip == null) return null;
+
+        return SoundManagerSystem.Play(cue, position, new SoundPlayOptions
+        {
+            OutputMixerGroup = settings.OutputMixerGroup,
+            MasterVolume = settings.MasterVolume,
+            PitchMultiplier = pitchMultiplier,
+            SpatialBlendMultiplier = settings.SpatialBlendMultiplier,
+            MinDistanceMultiplier = settings.MinDistanceMultiplier,
+            MaxDistanceMultiplier = settings.MaxDistanceMultiplier,
+            DistanceRolloff = settings.DistanceRolloff,
             ObjectName = "Player_OneShotSE"
         });
     }

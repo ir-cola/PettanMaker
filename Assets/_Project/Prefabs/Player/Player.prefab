@@ -5519,6 +5519,7 @@ MonoBehaviour:
   hitStop: {fileID: 6907336840874711277}
   debugInvincible: 0
   gameOverBgm: {fileID: 8300000, guid: c3c933a9fd1d663469141cb61d4f85a0, type: 3}
+  heavyDamageThreshold: 2
   onHPChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5561,6 +5562,8 @@ MonoBehaviour:
   onStickerPasted:
     m_PersistentCalls:
       m_Calls: []
+  pasteSE: {fileID: 8300000, guid: e569ac70d4078e3418acbe7c8153f509, type: 3}
+  pasteSEVolume: 1
   pasteValidRadius: 0.25
   skinnedRenderersOverride: []
 --- !u!114 &5802044767519290164
@@ -5862,6 +5865,9 @@ MonoBehaviour:
     activateVfxLifetime: 3
     activateVfxBaseScale: 1
     activateVfxParentToPlayer: 1
+    activateSe: {fileID: 8300000, guid: e86ac7a4693d5e148ace529413362fbe, type: 3}
+    equipSe: {fileID: 8300000, guid: d8aa6934d8bde634e8d25b84fe6c2927, type: 3}
+    seVolume: 1
   modelSwitcher: {fileID: 5802044767519290164}
   sizeController: {fileID: 264335848370042021}
   gauge: {fileID: 425925328087529104}

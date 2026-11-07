@@ -865,6 +865,9 @@ MonoBehaviour:
   playerViewer: {fileID: 2395689230790889182}
   openLoopSE: {fileID: 8300000, guid: 5d9c47de921a04143bb5fa1074abb57e, type: 3}
   openLoopVolume: 1
+  openSE: {fileID: 8300000, guid: 6d51d1178d96506439f7e1f4de601bca, type: 3}
+  closeSE: {fileID: 8300000, guid: d4a978610119b204b9c603a01d4977ee, type: 3}
+  openCloseVolume: 1
 --- !u!1 &1456645530197440381
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,12 @@ public class StickerPickup : MonoBehaviour {
     [Tooltip("回収時にプレイヤーのHPを最大まで回復する。消費アイテム用なのでシール帳には追加しない。")]
     [SerializeField] private bool fullHealOnPickup = false;
 
+    [Header("SE")]
+    [Tooltip("シールを入手した瞬間に鳴らすSE。")]
+    [SerializeField] private AudioClip collectSE;
+    [Range(0f, 1f)]
+    [SerializeField] private float collectSEVolume = 1f;
+
     // 剥がし演出中の多重回収防止
     private bool isPeeling = false;
 
@@ -113,6 +119,8 @@ public class StickerPickup : MonoBehaviour {
             if (inventory != null) {
                 inventory.AddSticker(stickerData, displaySprite);
                 Debug.Log($"[StickerPickup] 回収：{stickerData.stickerName}");
+                if (collectSE != null)
+                    AudioSource.PlayClipAtPoint(collectSE, transform.position, collectSEVolume);
             }
         }
         else if (!fullHealOnPickup) {

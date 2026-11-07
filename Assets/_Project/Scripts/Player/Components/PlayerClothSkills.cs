@@ -71,6 +71,14 @@ public class PlayerClothSkills : MonoBehaviour {
         public float activateVfxBaseScale = 1f;
         [Tooltip("エフェクトをプレイヤーの子にして体格の動的変化(縮小/巨大化)にサイズを追従させる")]
         public bool activateVfxParentToPlayer = true;
+
+        [Header("SE")]
+        [Tooltip("アクティブスキル発動時に鳴らすSE (アリス大きくなる 等)。")]
+        public AudioClip activateSe;
+        [Tooltip("この服を着た瞬間に鳴らすSE (アリス小さくなる 等のパッシブ着用音)。")]
+        public AudioClip equipSe;
+        [Range(0f, 1f)]
+        public float seVolume = 1f;
     }
 
     [Header("服ごとのスキル定義 (アリスのみ登録・他は空でOK)")]
@@ -182,6 +190,10 @@ public class PlayerClothSkills : MonoBehaviour {
     private void OnClothChanged(GameObject cloth) {
         _current = FindEntry(cloth);
 
+        // 着用音 (アリス小さくなる 等のパッシブ着用音)
+        if (_current != null && _current.equipSe != null)
+            AudioSource.PlayClipAtPoint(_current.equipSe, transform.position, _current.seVolume);
+
         // アクティブは服が変わったら打ち切る (アリスの巨大化中に脱いだら戻す)
         if (sizeController != null) {
             sizeController.CancelActive();
@@ -207,6 +219,8 @@ public class PlayerClothSkills : MonoBehaviour {
         sizeController.TriggerActive(_current.activeSizeMul, _current.activeDuration);
         if (gauge != null) gauge.BeginDrain(_current.activeDuration);
         SpawnActivateVfx();
+        if (_current.activateSe != null)
+            AudioSource.PlayClipAtPoint(_current.activateSe, transform.position, _current.seVolume);
         Debug.Log("[PlayerClothSkills] アクティブ発動: " +
                   (string.IsNullOrEmpty(_current.label) ? _current.active.ToString() : _current.label) +
                   " (x" + _current.activeSizeMul + " / " + _current.activeDuration + "s)");

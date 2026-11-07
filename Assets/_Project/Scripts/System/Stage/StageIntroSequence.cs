@@ -142,6 +142,14 @@ public class StageIntroSequence : MonoBehaviour {
     void Awake() {
         InProgress = playOnStart;   // 演出終了 (RestoreControl) までチュートリアル等を抑制
 
+        // 入力を「演出開始より前(Awake)」で即ロックする。
+        // 従来は FreezePlayer(true) が演出コルーチン内 (接地記録時) まで走らず、
+        // ロード剥がし〜演出開始の隙にプレイヤーが移動/攻撃できた (#12/#16)。
+        if (playOnStart) {
+            if (player == null) player = FindObjectOfType<PlayerLifetimeScope>();
+            if (player != null) player.SetUIMode(true);
+        }
+
         // 【重要】カメラを最初のショットへ「ロード画面が動く前(Awake)」に配置する。
         //   従来はカメラ配置(EnsureSetup)が Start / OnLoadRevealed で走っていたため、
         //   ロード剥がしの瞬間はまだ既定(プレイ)画角で、剥がした直後にイントロ初期位置へ
