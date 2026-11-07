@@ -28,6 +28,12 @@ public class PlayerPasteManager : MonoBehaviour {
     // 貼り付けが成功した瞬間に呼ばれる（アイテム効果発動用）
     public UnityEvent<StickerData> onStickerPasted;
 
+    [Header("SE")]
+    [Tooltip("シールを貼った瞬間に鳴らすSE。")]
+    [SerializeField] private AudioClip pasteSE;
+    [Range(0f, 1f)]
+    [SerializeField] private float pasteSEVolume = 1f;
+
     [Header("貼り付け有効判定")]
     [Tooltip("支配ボーンとヒット点がこの距離以内なら貼り付け有効（緑）")]
     [SerializeField] private float pasteValidRadius = 0.25f;
@@ -199,6 +205,9 @@ public class PlayerPasteManager : MonoBehaviour {
 
         // 貼り付け成功を通知（アイテム効果発動など）
         onStickerPasted?.Invoke(data);
+
+        if (pasteSE != null)
+            AudioSource.PlayClipAtPoint(pasteSE, transform.position, pasteSEVolume);
     }
 
     private static Mesh BuildCombinedBakedMesh(SkinnedMeshRenderer[] renderers) {

@@ -33,6 +33,10 @@ public class PlayerHealth : MonoBehaviour, IHealth {
     [Tooltip("HPが0になったとき BGMManager.SetOverride で流すBGM。未設定なら切り替えない。")]
     [SerializeField] private AudioClip gameOverBgm;
 
+    [Header("被弾SE")]
+    [Tooltip("この値以上のダメージで「重」ダメージ音(Damage[1])、未満で「軽」(Damage[0])を鳴らす。")]
+    [SerializeField] private int heavyDamageThreshold = 2;
+
     // チューニング値は PlayerHealthSettings アセットで調整する (Awake でアセット値に上書き)。
     // 以下はアセット未アサイン時のコード既定値。
     private int maxHP = 5;
@@ -102,7 +106,7 @@ public class PlayerHealth : MonoBehaviour, IHealth {
 
         // デバッグ無敵中: HPは減らさず、被弾リアクション用の無敵時間 (点滅・連続被弾防止) だけ開始する
         if (debugInvincible) {
-            GetComponent<Player_SoundManager>()?.PlayDamage();
+            GetComponent<Player_SoundManager>()?.PlayDamage(amount >= heavyDamageThreshold);
             invincibleUntil = Time.time + invincibleDuration;
             return;
         }
@@ -112,7 +116,7 @@ public class PlayerHealth : MonoBehaviour, IHealth {
         onHPChanged?.Invoke(currentHP);
 
         if (currentHP < previousHP) {
-            GetComponent<Player_SoundManager>()?.PlayDamage();
+            GetComponent<Player_SoundManager>()?.PlayDamage(amount >= heavyDamageThreshold);
             if (currentHP > 0)
                 invincibleUntil = Time.time + invincibleDuration;
         }

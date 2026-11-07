@@ -222,6 +222,7 @@ public partial class PlayerAttack : MonoBehaviour {
         };
 
         HashSet<IHealth> damaged = new HashSet<IHealth>();
+        Vector3 hitSoundPos = fxPos;   // ヒット音を鳴らす位置（最後に命中した敵の中心。音源が敵側に定位する）
         foreach (Collider col in hitColliders) {
             IEnemy enemy = col.GetComponentInParent<IEnemy>();
             if (enemy == null) continue;
@@ -234,6 +235,7 @@ public partial class PlayerAttack : MonoBehaviour {
                 continue;
             }
             CombatSystem.Instance.Damage(enemy, damage, ctx, this);
+            hitSoundPos = col.bounds.center;
             // 命中1体ごとのヒットVFXフック (対象の体の中心で弾ける)
             OnEnemyHit?.Invoke(new HitEvent { position = col.bounds.center, damage = damage });
         }
@@ -242,7 +244,7 @@ public partial class PlayerAttack : MonoBehaviour {
         // 同フレーム多重命中でも 0.1 秒内は1回にまとめる (重ねると振幅が倍々で酔う)。
         bool fxOk = Time.unscaledTime - lastImpactFxTime >= 0.1f;
         if (damaged.Count > 0) {
-            sound?.PlayAttackHit();
+            sound?.PlayAttackHit(hitSoundPos);
             // 多段ヒット(巨大スタンプ)は毎ヒットで全体停止すると停止が重なりガタつくため、
             // 呼び出し側が最後の一撃だけ true を渡す等で制御できるようにしている。
             // globalHitstop >= 0 なら攻撃ごとの指定値、負なら共有既定 (hitGlobalHitstop) を使う。
