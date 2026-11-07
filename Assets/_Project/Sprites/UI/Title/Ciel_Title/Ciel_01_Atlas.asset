@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Ciel_01_Atlas
+  m_EditorClassIdentifier: spine-unity::Spine.Unity.SpineAtlasAsset
+  serializedMaterialOverrides: []
+  textureLoadingMode: 0
+  onDemandTextureLoader: {fileID: 0}
+  atlasFile: {fileID: 4900000, guid: 0ec10e1529b18fe46b3430ea3901f912, type: 3}
+  materials:
+  - {fileID: 2100000, guid: a8177ad003923af4cb7eac008a90a382, type: 2}
+  - {fileID: 2100000, guid: a04b863bdcf0b854a8b79d8ad9ab7164, type: 2}
+  - {fileID: 2100000, guid: 073afe34d3a0f4a44848fef8b037cec6, type: 2}
+  - {fileID: 2100000, guid: 6d0a8dc442d94544ba820222cba6ee60, type: 2}
+  - {fileID: 2100000, guid: 1982d7bf80cf5d544bbdcb495c6730c9, type: 2}
+  - {fileID: 2100000, guid: cf4231b8d3243134c850f66be3f21b07, type: 2}
+  - {fileID: 2100000, guid: e5e005850e05f7843884ed1707919d6a, type: 2}
+  - {fileID: 2100000, guid: db0a80f02fa31b447a6874f371e9e7f3, type: 2}
+  - {fileID: 2100000, guid: 654f93310ebb0d24289fe8cd2ea6f982, type: 2}
+  - {fileID: 2100000, guid: 0f81b8ab89c873b4fb7740011a0d1a9c, type: 2}
+  - {fileID: 2100000, guid: 1bb2f6f3ec3bb4b44a46c714f5e0532c, type: 2}
+  - {fileID: 2100000, guid: e8a882e6e30b4064497c5df398881ef5, type: 2}
+  - {fileID: 2100000, guid: cbee45afa7ac32a4cbaf083223f82e9a, type: 2}
+  - {fileID: 2100000, guid: 60236a43d3dabee49976997957023ae1, type: 2}
+  - {fileID: 2100000, guid: 812a36195c0dbe242a6b8b83f66069bc, type: 2}
+  - {fileID: 2100000, guid: 831b3ce006e2fc84e93e1fd45b4658c0, type: 2}
+  - {fileID: 2100000, guid: 24bc42cf5af4ac946b215074a210d7f0, type: 2}

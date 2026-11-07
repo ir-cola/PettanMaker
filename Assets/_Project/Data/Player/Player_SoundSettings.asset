@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed3eb005a704ce79d684b57ae654292, type: 3}
+  m_Name: Player_SoundSettings
+  m_EditorClassIdentifier: Assembly-CSharp::Player_SoundSettings
+  OutputMixerGroup: {fileID: 0}
+  MasterVolume: 1
+  SpatialBlendMultiplier: 0.35
+  MinDistanceMultiplier: 1
+  MaxDistanceMultiplier: 1
+  DistanceRolloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.7
+      outSlope: -0.7
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1.3
+      outSlope: -1.3
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Jump:
+  - Clip: {fileID: 8300000, guid: 1a4257a2377ac79418ba97ebf43bc7e3, type: 3}
+    Volume: 0.65
+    PitchRange: {x: 0.97, y: 1.03}
+    SpatialBlend: 0.4
+    MinDistance: 2
+    MaxDistance: 25
+  - Clip: {fileID: 8300000, guid: dd1e59f479db3564191e80a612bf63d7, type: 3}
+    Volume: 0.65
+    PitchRange: {x: 0.97, y: 1.03}
+    SpatialBlend: 0.4
+    MinDistance: 2
+    MaxDistance: 25
+  Land:
+    Clip: {fileID: 8300000, guid: 1629d1625d428694b9531bcf7fdde746, type: 3}
+    Volume: 0.55
+    PitchRange: {x: 0.96, y: 1.02}
+    SpatialBlend: 0.5
+    MinDistance: 2
+    MaxDistance: 25
+  Dodge:
+  - Clip: {fileID: 8300000, guid: 9ab91b01d1dc43a4bbe9b8e372959e8d, type: 3}
+    Volume: 0.65
+    PitchRange: {x: 0.98, y: 1.04}
+    SpatialBlend: 0.35
+    MinDistance: 2
+    MaxDistance: 25
+  Damage:
+  - Clip: {fileID: 8300000, guid: bbae6fdd5b13ddc4c98582ec33afead9, type: 3}
+    Volume: 0.75
+    PitchRange: {x: 0.96, y: 1.02}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  - Clip: {fileID: 8300000, guid: 083329caaa9d21f44aa888ebebb773d3, type: 3}
+    Volume: 0.75
+    PitchRange: {x: 0.96, y: 1.02}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  Heal:
+    Clip: {fileID: 8300000, guid: 0e229eea4787e3148b973e9b2ecc63d5, type: 3}
+    Volume: 0.7
+    PitchRange: {x: 0.98, y: 1.02}
+    SpatialBlend: 0.2
+    MinDistance: 2
+    MaxDistance: 25
+  AttackHit:
+  - Clip: {fileID: 8300000, guid: 816ce0d791346204a9597b35cdade8a8, type: 3}
+    Volume: 0.8
+    PitchRange: {x: 0.8, y: 1.2}
+    SpatialBlend: 0.45
+    MinDistance: 2
+    MaxDistance: 25
+  - Clip: {fileID: 8300000, guid: 327603c9dfea9304898d468a3f38845b, type: 3}
+    Volume: 0.8
+    PitchRange: {x: 0.8, y: 1.2}
+    SpatialBlend: 0.45
+    MinDistance: 2
+    MaxDistance: 25
+  AttackMiss:
+    Clip: {fileID: 8300000, guid: 782b63fdcd3c9b04088ed4896cc8615f, type: 3}
+    Volume: 0.75
+    PitchRange: {x: 0.8, y: 1.2}
+    SpatialBlend: 0.55
+    MinDistance: 2
+    MaxDistance: 28
+  AttackHitMinInterval: 0.06
+  ChargeStart:
+  - Clip: {fileID: 8300000, guid: 6c90cb8354ff05d4888c21414d4abcf0, type: 3}
+    Volume: 0.65
+    PitchRange: {x: 0.9, y: 1.1}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  - Clip: {fileID: 8300000, guid: 6c90cb8354ff05d4888c21414d4abcf0, type: 3}
+    Volume: 0.65
+    PitchRange: {x: 0.9, y: 1.1}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  ChargeLevel1:
+    Clip: {fileID: 8300000, guid: c11db66669cf99c43924a46c83ccae57, type: 3}
+    Volume: 0.7
+    PitchRange: {x: 0.9, y: 1.1}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  ChargeLevel1Done:
+    Clip: {fileID: 8300000, guid: 77eecc40994fcb142b484760bd60f9c9, type: 3}
+    Volume: 1
+    PitchRange: {x: 0.9, y: 1.1}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  ChargeFinish:
+    Clip: {fileID: 8300000, guid: 2522f8d5834129b4aad052a0fb053393, type: 3}
+    Volume: 0.8
+    PitchRange: {x: 0.9, y: 1.1}
+    SpatialBlend: 0.25
+    MinDistance: 2
+    MaxDistance: 25
+  ChargeDone:
+    Clip: {fileID: 8300000, guid: c181220fe32c38c478a0d88f271b8ab4, type: 3}
+    Volume: 0.12
+    PitchRange: {x: 0.95, y: 1.05}
+    SpatialBlend: 0.2
+    MinDistance: 2
+    MaxDistance: 25
+  ChargeRelease:
+    Clip: {fileID: 8300000, guid: 816ce0d791346204a9597b35cdade8a8, type: 3}
+    Volume: 0.8
+    PitchRange: {x: 0.85, y: 1.15}
+    SpatialBlend: 0.35
+    MinDistance: 2
+    MaxDistance: 28
+  ChargeDoneStartDelay: 0
+  ChargeLoopStartSeconds: 0.2
+  ChargeLoopEndSeconds: 1.5
+  ChargeDoneLoopStartSeconds: 0.3
+  ChargeDoneLoopEndSeconds: 1.6
+  ChargeBlendDuration: 0.1
+  Footsteps:
+    Surfaces:
+    - Name: Grass
+      MatchText: Grass
+      Steps:
+      - Clip: {fileID: 8300000, guid: d0a6af74b33e7014eb16475110ca20f8, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 2d071bbf8bf66a143aa1d7a52bc6ab22, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 6e485375b42ce6f4bb85da3e34c9a8f4, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: bdc618250c3fd614aab86510b99b260b, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 6fc7e566df8d8ee49a850f95ad578501, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 08af27373b086d9499580f440a95af80, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 9d557ef0de0b56e4b84af4fb8174ee24, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: bf54f3e68ccfee44ea95bb989311c32c, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 928317a51aa2ffb498b91f31e1233907, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+    - Name: Stone
+      MatchText: Stone
+      Steps:
+      - Clip: {fileID: 8300000, guid: 5ffb9f71e5cf429419b3cd17b01d0f6b, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 527f9b84d7984b44a831e97e91c404e3, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 5a52223e44058e54e81e98fa73ef6cd0, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: b64620cbc0f52894aaa7fc0d237d389c, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 5b7d472c513918543bedb81602943cdd, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 279076984b787ea46a7a8bc29523ca56, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: c3859575e6b9a0544b38aaea308113cb, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: f0e8225f7be2a8b4cb4db4d273f7cfa7, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: c265444abfea9a944a194e908c027c6e, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+      - Clip: {fileID: 8300000, guid: 558746f2cb450b84b80d82b848c847fd, type: 3}
+        Volume: 0.35
+        PitchRange: {x: 1, y: 1}
+        SpatialBlend: 0.5
+        MinDistance: 2
+        MaxDistance: 20
+    DefaultSurfaceIndex: 0
+    StepDistance: 1.35
+    MinInterval: 0.12
+    PitchVariation: 0.04
+    SurfaceCheckDistance: 1.2

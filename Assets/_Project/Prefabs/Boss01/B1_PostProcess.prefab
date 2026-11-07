@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1055714325542456083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1812799158974754681}
+  - component: {fileID: 4933882614421356759}
+  - component: {fileID: 1091525769495686301}
+  m_Layer: 0
+  m_Name: B1_PostProcess
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1812799158974754681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055714325542456083}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4933882614421356759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055714325542456083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9cce9d762fe029c045cc9235531267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6, type: 2}
+  tonemapping: 1
+  bloom: 1
+  bloomThreshold: 0.9
+  bloomIntensity: 0.8
+  bloomScatter: 0.7
+  bloomTint: {r: 1, g: 1, b: 1, a: 1}
+  colorGrading: 1
+  postExposure: 0.8
+  contrast: 8
+  saturation: 10
+  colorFilter: {r: 1, g: 1, b: 1, a: 1}
+  shadowTint: 1
+  shadowColor: {r: 0.98, g: 0.95, b: 1.06, a: 1}
+  midtoneColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  vignette: 1
+  vignetteIntensity: 0.18
+  vignetteSmoothness: 0.6
+  vignetteColor: {r: 0.05, g: 0.03, b: 0.08, a: 1}
+  filmGrain: 1
+  filmGrainIntensity: 0.08
+  chromaticAberration: 1
+  chromaticIntensity: 0.06
+  enableSmaa: 1
+--- !u!114 &1091525769495686301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055714325542456083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca177378f2a5abb2117bddec3ce35a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePulse: 1
+  damagePulseDuration: 0.35
+  damageChromatic: 0.6
+  damageVignetteIntensity: 0.45
+  damageVignetteColor: {r: 0.45, g: 0.02, b: 0.02, a: 1}
+  phase2Look: 1
+  phase2FadeDuration: 1.5
+  phase2Contrast: 15
+  phase2Saturation: 5
+  phase2ColorFilter: {r: 1.03, g: 0.97, b: 1.08, a: 1}
+  phase2BloomIntensity: 1.2
+  phase2Breath: 1
+  phase2BreathFrequency: 0.4
+  phase2BreathAmount: 0.08
+  phase2EntryFlash: 1
+  phase2FlashExposure: 0.5
+  phase2FlashSaturation: -60
+  phase2FlashAttack: 0.06
+  phase2FlashHold: 0.1
+  phase2FlashRelease: 0.8
+  downEntryFlash: 1
+  downFlashExposure: 1.2
+  downFlashSaturation: -40
+  downFlashDuration: 1
+  critFlash: 1
+  critFlashExposure: 0.8
+  critFlashSaturation: -30
+  critFlashChromatic: 0.7
+  critFlashAttack: 0.02
+  critFlashHold: 0.08
+  critFlashRelease: 0.4
+  telegraphTension: 1
+  tensionFadeDuration: 0.4
+  tensionVignetteIntensity: 0.32
+  tensionVignetteColor: {r: 0.08, g: 0.02, b: 0.12, a: 1}
+  tensionColorRush: {r: 0.3, g: 0.03, b: 0.06, a: 1}
+  tensionColorTail: {r: 0.34, g: 0.24, b: 0.03, a: 1}
+  rushSpeedLook: 1
+  rushFadeIn: 0.15
+  rushFadeOut: 0.3
+  rushLensDistortion: -0.15
+  rushChromatic: 0.25
+  rushVignetteIntensity: 0.22
+  rushVignetteColor: {r: 0.02, g: 0.02, b: 0.06, a: 1}
+  enragedLook: 1
+  enragedFadeDuration: 1
+  enragedColorFilter: {r: 1.06, g: 0.96, b: 0.96, a: 1}
+  enragedFilmGrain: 0.14
+  lowHpLook: 1
+  lowHpRatio: 0.25
+  lowHpFadeDuration: 0.8
+  lowHpSaturation: -40
+  lowHpVignetteIntensity: 0.35
+  lowHpVignetteColor: {r: 0.35, g: 0.02, b: 0.02, a: 1}
+  roarPulse: 1
+  roarAttack: 0.08
+  roarHold: 0.5
+  roarRelease: 0.9
+  roarLensDistortion: -0.35
+  roarChromatic: 0.5
+  roarBloomIntensity: 1.8
+  roarVignetteIntensity: 0.4
+  roarVignetteColor: {r: 0.12, g: 0.02, b: 0.18, a: 1}
+  roarShakeDuration: 0.6
+  roarShakeIntensity: 0.35
+  roarShakeFrequency: 22
+  returnToNormalDuration: 1.2
+  defeatFlash: 1
+  defeatFlashExposure: 0.45
+  defeatFlashAttack: 0.05
+  defeatFlashHold: 0.2
+  defeatFlashRelease: 1.8

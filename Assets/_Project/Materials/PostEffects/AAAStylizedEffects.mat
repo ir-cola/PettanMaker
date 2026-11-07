@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AAAStylizedEffects
+  m_Shader: {fileID: 4800000, guid: 0182bcf4926943c49b795d363b129edf, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _LookupTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AAAEffectsIntensity: 0
+    - _BleedRadius: 1.4
+    - _BlurRadius: 1.25
+    - _BlurStrength: 0.1
+    - _ContactShadowBias: 0.002
+    - _ContactShadowRadius: 1.5
+    - _ContactShadowStrength: 0.34
+    - _HalftoneScale: 5.5
+    - _HalftoneStrength: 0.12
+    - _HeatHazeMask: 0.35
+    - _HeatHazeScale: 7
+    - _HeatHazeSpeed: 0.35
+    - _HeatHazeStrength: 0.08
+    - _KuwaharaRadius: 1.6
+    - _KuwaharaStrength: 0.22
+    - _LookupSize: 32
+    - _LookupStrength: 0.3
+    - _PigmentVariation: 0.035
+    - _UseLookupTex: 0
+    - _WatercolorStrength: 0.2
+    m_Colors:
+    - _ContactShadowColor: {r: 0.45, g: 0.5, b: 0.7, a: 1}
+    - _HalftoneColor: {r: 0.055, g: 0.07, b: 0.13, a: 1}
+    - _LookupHighlight: {r: 1.08, g: 0.96, b: 0.82, a: 1}
+    - _LookupMid: {r: 0.98, g: 0.96, b: 1.02, a: 1}
+    - _LookupShadow: {r: 0.75, g: 0.82, b: 1.05, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

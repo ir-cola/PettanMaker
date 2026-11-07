@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fence_Middle_Wood_Light
+  m_Shader: {fileID: 4800000, guid: 122ddcbbb80e04944a5a4fc35614f994, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _OCCLUDEALLOW_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _ColorNoiseScale: 0.35
+    - _ColorVariation: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _HeightGradient: 0
+    - _OccludeAllow: 0
+    - _OcclusionFade: 0
+    - _PolkaCell: 44
+    - _PolkaPulse: 0.09
+    - _PolkaPulseSpeed: 3.2
+    - _ShadowSmooth: 0.08
+    - _ShadowThreshold: 0.5
+    - _Wind: 0
+    - _WindHeightMask: 0
+    - _WindScale: 0.35
+    - _WindSpeed: 1.6
+    - _WindStrength: 0.08
+    m_Colors:
+    - _BaseColor: {r: 0.7599904, g: 0.5966613, b: 0.32627022, a: 1}
+    - _ColorB: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0.6, g: 0.54999995, b: 0.75, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

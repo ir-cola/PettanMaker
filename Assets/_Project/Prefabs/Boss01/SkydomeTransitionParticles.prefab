@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7496501853719977785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403818117471827682}
+  - component: {fileID: 8243932183284362567}
+  m_Layer: 0
+  m_Name: SkydomeTransitionParticles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403818117471827682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7496501853719977785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8243932183284362567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7496501853719977785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d05655b81f7634d898196c57824046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkydomeTransitionParticles
+  volumeSize: {x: 60, y: 24, z: 60}
+  maxParticles: 900
+  peakEmission: 700
+  initialBurst: 220
+  sizeRange: {x: 0.18, y: 0.55}
+  lifetime: {x: 2.5, y: 5.5}
+  burstSpeed: {x: 0.6, y: 2.2}
+  riseSpeed: 0.5
+  driftSpeed: 0.35
+  turbulence: 0.55
+  turbulenceFreq: 0.2
+  ringCount: 90
+  ringSpeed: 14
+  ringHeight: 1.2
+  ringLifetime: {x: 1.2, y: 2.2}
+  useTransitionColors: 1
+  colorWarm: {r: 1.6, g: 0.35, b: 1.2, a: 1}
+  colorCool: {r: 2.4, g: 1.6, b: 0.6, a: 1}
+  brightness: 2

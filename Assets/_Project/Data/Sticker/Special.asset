@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ca9f1399aeb1b449bc8570be403ffa, type: 3}
+  m_Name: Special
+  m_EditorClassIdentifier: Assembly-CSharp::StickerData
+  stickerName: "\u30B9\u30DA\u30B7\u30E3\u30EB\u30B7\u30FC\u30EB"
+  stickerType: 3
+  thumbnail: {fileID: -1653743121, guid: e631f09f6d543894293b1c9ea5f10881, type: 3}
+  decalTexture: {fileID: 2800000, guid: e631f09f6d543894293b1c9ea5f10881, type: 3}
+  equipPrefab: {fileID: 0}
+  description: 

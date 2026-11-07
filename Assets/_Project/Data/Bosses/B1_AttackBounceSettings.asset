@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c35c2d522748f9ad2c05aa7fc8f7ef, type: 3}
+  m_Name: B1_AttackBounceSettings
+  m_EditorClassIdentifier: Assembly-CSharp::B1_AttackBounceSettings
+  Enabled: 1
+  EnableTailLanding: 1
+  EnableRush: 1
+  EnableRoar: 1
+  AddBoxColliderWhenMissing: 1
+  UpwardVelocity: 8
+  OutwardVelocity: 2
+  RandomTorque: 8
+  StrengthAtRadiusEdge: 0.35
+  RushUpwardVelocity: 3.5
+  RushOutwardVelocity: 5
+  RushRandomTorque: 6
+  RoarHorizontalVelocity: 6
+  RoarDirectionRandomness: 0.25
+  RoarYawTorque: 4
+  RoarMoveDuration: 0.3
+  RestoreRigidbodyState: 1
+  RestoreStartPose: 1
+  MinimumFlightTime: 0.15
+  GroundProbeDistance: 0.12
+  MaximumFlightTime: 5

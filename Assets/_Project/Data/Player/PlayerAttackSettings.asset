@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14ca353a0cb4b848b6753be36b3436c, type: 3}
+  m_Name: PlayerAttackSettings
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttackSettings
+  AttackDamage: 20
+  AttackRadius: 2
+  HitGlobalHitstop: 0.09
+  HitGlobalHitstopScale: 0.06
+  HitShakeDuration: 0.22
+  HitShakeIntensity: 0.28
+  ImpactSquashScaleXZ: 1.3
+  ImpactSquashScaleY: 0.6
+  ImpactSquashDuration: 0.2
+  ShakeDuration: 0.15
+  ShakeIntensity: 0.1
+  HitstopDurationEnemy: 0.08
+  HitstopDurationSelf: 0.04
+  DestroyDelay: 0.5
+  TapThreshold: 0.15
+  ComboWindow: 0.6
+  ComboMinInterval: 0.3
+  ComboCooldown: 0
+  ComboStageDamages: 0f0000000f00000014000000
+  ComboStageHitstops:
+  - 0.09
+  - 0.09
+  - 0.12
+  ComboFlightTime: 0.12
+  SlashHitRadius: 1.6
+  Combo1SpawnDelay: 0
+  Combo2SpawnDelay: 0
+  Combo3SpawnDelay: 0.3
+  ComboStepDistance: 1.2
+  ComboStepTime: 0.18
+  ComboLockRadius: 7
+  ComboLockLinger: 1.2
+  ComboLockStepMul:
+  - 1
+  - 1.6
+  - 2.2
+  ComboLockStopRange: 1.2
+  ComboWindupPull: 0.6
+  ComboZoomIn: 1
+  ComboZoomFov: 6
+  ComboZoomDur: 0.18
+  ComboZoomReturn: 0.55
+  ForwardOffset: 2.6
+  HeightOffset: 3
+  SideOffset: 1
+  BetweenWeaponsOffset: 0.5
+  MaxChargeTime: 1.6
+  ReleaseThresholds:
+  - 0
+  - 0.7
+  - 1.6
+  Charge1Cooldown: 0.6
+  SlamSpeed: 15
+  SlamGravity: 100
+  SlamWaitTime: 0.15
+  ArcStagger: 0.05
+  ArcFlightTime: 0.24
+  ConvergeSpread: 2.4
+  ConvergeHeight: 3
+  ConvergeJitter: 0.4
+  ArcRise: 0.25
+  ChibiScaleMul: 0.4
+  ChibiHeight: 3.5
+  ChibiForward: 1
+  ChibiAppearTime: 0.1
+  ChibiFallSpeed: 16
+  ChibiFallGravity: 120
+  GiantScaleMul: 2.6
+  GiantHeight: 7
+  GiantForward: 1.5
+  GiantAppearTime: 0.16
+  GiantSlamTime: 0.22
+  GiantRadius: 4.5
+  GiantDamagePerHit: 25
+  GiantFirstHitDamage: 80
+  GiantHitCount: 4
+  GiantHitInterval: 0.09
+  GiantHitstop: 0.12
+  GiantChargeZoomIn: 2.2
+  GiantChargeFovPunch: -7

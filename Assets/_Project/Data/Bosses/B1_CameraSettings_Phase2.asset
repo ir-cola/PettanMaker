@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d817ee8aa7043a3b0b36344a92817da, type: 3}
+  m_Name: B1_CameraSettings_Phase2
+  m_EditorClassIdentifier: Assembly-CSharp::B1_Phase2CameraSettings
+  lookHeight: 2.2
+  postCinemaIdleDuration: 1.5
+  fog:
+    fogColor: {r: 0.72, g: 0.55, b: 0.95, a: 1}
+    heightBase: -2.5
+    heightFalloff: 0.18
+    heightStrength: 0.6
+    distanceStart: 3
+    distanceEnd: 42
+    distanceStrength: 0.5
+    restoreFogOnFinish: 1
+  shockwave:
+    count: 20
+    interval: 0.06
+    heightOffset: 0
+    use3D: 1
+    material3D: {fileID: 2100000, guid: 880f9797c2cb0d74aa3e1c56bfebce30, type: 2}
+    scale3D: {x: 1, y: 0.65, z: 1}
+    duration: 0.9
+    strength: 0.5
+    startScale: 2.5
+    endScale: 18
+    ringWidth: 0.3
+    rimColor: {r: 0.82, g: 0.6, b: 1, a: 1}
+    rimIntensity: 2
+  roarShake:
+    enabled: 1
+    duration: 1
+    intensity: 0.3
+    frequency: 40
+  colorDrain:
+    enabled: 1
+    drainIn: 0.08
+    hold: 0.12
+    release: 0.35
+    peak: 1
+    maxDesaturation: 1
+    darken: 0.12
+    tint: {r: 0.75, g: 0.72, b: 0.85, a: 1}
+    tintAmount: 0.25
+  roarKnockbackPlayer: 1
+  roarKnockbackDistance: 6

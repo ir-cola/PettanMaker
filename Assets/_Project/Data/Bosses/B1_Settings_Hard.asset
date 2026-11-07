@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2e8b96c81ec034baee03dc7bcb158c, type: 3}
+  m_Name: B1_Settings_Hard
+  m_EditorClassIdentifier: Assembly-CSharp::B1_Settings
+  MaxHP: 350
+  HitStopDuration: 0.08
+  HitStopFrozenSpeed: 0
+  Critical:
+    Enabled: 1
+    Chance: 0.1
+    DamageMultiplier: 2
+    SnapZoomFov: 4
+    SnapZoomInDuration: 0.035
+    SnapZoomHoldDuration: 0.07
+    SnapZoomOutDuration: 0.3
+    BossHitStopDuration: 0.3
+    GlobalHitStopDuration: 0.3
+    GlobalHitStopScale: 0.02
+    ShakeDuration: 0.3
+    ShakeIntensity: 0.5
+    ShakeFrequency: 28
+    BlinkInterval: 0.06
+    BlinkCount: 3
+    BlinkAmount: 0.9
+    BlinkColor: {r: 4, g: 3.2, b: 1.2, a: 1}
+  ChaseSpeed: 6.5
+  EnragedSpeedMult: 1.7
+  EnragedAttackSpeedMult: 1.2
+  TurnSpeed: 120
+  TurnArcThreshold: 10
+  TurnArcStrength: 5
+  NavAcceleration: 8
+  NavMeshEdgeMargin: 1
+  AnimSpeedSmoothing: 10
+  TurnAnimAngle: 70
+  TurnAnimCooldown: 0.6
+  AimCrouch:
+    Enabled: 1
+    EnterDuration: 0.12
+    HoldDuration: 0.06
+    ReleaseDuration: 0.05
+    CrouchAmount: 0.22
+    WidthScale: 1.1
+    TurnSpeedMultiplier: 2.5
+  BgmAccent:
+    Enabled: 1
+    AnticipationVolume: 0.78
+    AnticipationFadeDuration: 0.2
+    ReleaseDuration: 0.08
+    TailRainBedVolume: 0.9
+    TailRainBedFadeDuration: 0.25
+  Idle:
+    Duration: 2
+    Cooldown: 0
+  Walk:
+    ActivateRange: 3
+    StopRange: 6
+    Speed: 2
+    MaxDuration: 3
+    Cooldown: 0
+  Run:
+    ActivateRange: 6
+    StopRange: 6
+    Speed: 9
+    MaxDuration: 3
+    Cooldown: 0
+  BackStep:
+    TriggerRange: 8
+    Distance: 5
+    Speed: 9
+    JumpHeight: 2.5
+    MapRadius: 20
+    EdgeMargin: 1.5
+    LandRecovery: 0.35
+    TurnSpeed: 540
+    MaxDuration: 1.2
+    Cooldown: 0
+  Scratch:
+    AttackRange: 6
+    Cooldown: 1.4
+    RecoveryDuration: 0.6
+    DamagePerHit: 020000000200000003000000
+    DamageType: 0
+    EffectsPerHit:
+    - targetHitstop: 0.05
+      sourceHitstop: 0
+      shakeDuration: 0.08
+      shakeIntensity: 0.1
+      globalHitstop: 0
+      globalHitstopScale: 0
+    - targetHitstop: 0.07
+      sourceHitstop: 0
+      shakeDuration: 0.1
+      shakeIntensity: 0.14
+      globalHitstop: 0
+      globalHitstopScale: 0
+    - targetHitstop: 0.1
+      sourceHitstop: 0.1
+      shakeDuration: 0.15
+      shakeIntensity: 0.25
+      globalHitstop: 0.06
+      globalHitstopScale: 0.05
+    HitCountWeights:
+    - 1
+    - 2
+    - 3
+    AdvancePerHit:
+    - 3
+    - 3
+    - 7
+    AdvanceDuration: 0.3
+    HitboxTimings:
+    - EnterTime: 0.3
+      ExitTime: 1
+    - EnterTime: 0.2
+      ExitTime: 1
+    - EnterTime: 0.2
+      ExitTime: 1
+    AnimationSpeedTimings:
+    - AnticipationSpeed: 0.68
+      SwingSpeed: 1.35
+      SwingStartTime: 0.22
+    - AnticipationSpeed: 0.64
+      SwingSpeed: 1.45
+      SwingStartTime: 0.14
+    - AnticipationSpeed: 0.55
+      SwingSpeed: 1.6
+      SwingStartTime: 0.14
+  RushCharge:
+    MinRange: 6
+    Cooldown: 0
+    MaxRange: 18
+    Duration: 2
+    ScalePeak: 1.05
+    ScaleFrequency: 3
+    ScaleFrequencyEnd: 12
+    CrouchAmount: 0.25
+    CrouchDuration: 0.15
+  Rush:
+    Speed: 20
+    OvershootDistance: 5
+    Damage: 3
+    DamageType: 1
+    RecoveryDuration: 0.8
+    Effects:
+      targetHitstop: 0.08
+      sourceHitstop: 0
+      shakeDuration: 0
+      shakeIntensity: 0
+      globalHitstop: 0
+      globalHitstopScale: 0
+    BounceRadius: 2.5
+    UseTelegraph: 1
+    TelegraphWidth: 2.5
+    TelegraphColor: {r: 1, g: 0.12, b: 0.08, a: 1}
+    TelegraphMaterial: {fileID: 0}
+  TailAttack:
+    MinRange: 2
+    MaxRange: 12
+    ChargeDuration: 1.3
+    JumpDuration: 1
+    JumpHeight: 7
+    ImpactDelay: 0.22
+    AnimationStopDuration: 0.2
+    TailAttackLoopDuration: 0.8
+    TailAttackLandDuration: 0.45
+    AoeRadius: 4
+    AoeOffset: {x: 0, y: 0, z: -3}
+    Damage: 3
+    DamageType: 2
+    Effects:
+      targetHitstop: 0.1
+      sourceHitstop: 0
+      shakeDuration: 0
+      shakeIntensity: 0
+      globalHitstop: 0
+      globalHitstopScale: 0
+    LandingShakeDuration: 0.22
+    LandingShakeIntensity: 0.18
+    LandingShakeFrequency: 22
+    AnticipationSpeed: 0.7
+    SwingSpeed: 1.35
+    UseDamageWave: 1
+    WaveDuration: 0.4
+    WaveInnerRadius: 1
+    WaveThickness: 0.6
+    JumpDodgeHeight: 1.2
+    WaveColor: {r: 1, g: 0.55, b: 0.15, a: 1}
+    WaveSpikeDepth: 0.9
+    WaveMaterial: {fileID: 0}
+    ScreenDistortOnWave: 1
+    UseTelegraph: 1
+    TelegraphRadius: 3.5
+    TelegraphColor: {r: 1, g: 0.12, b: 0.08, a: 1}
+    TelegraphFarAlpha: 0.25
+    TelegraphPulseBoost: 2
+    TelegraphMaterial: {fileID: 0}
+    UseBurstCross: 1
+    BurstPattern: 0
+    EnragedUseSpiral: 1
+    BurstArmCount: 4
+    BurstAngleOffset: 0
+    BurstCirclesPerArm: 3
+    BurstStartDistance: 2.5
+    BurstCircleSpacing: 2.2
+    BurstCircleRadius: 1.1
+    BurstRadiusGrowth: 0.25
+    SpiralCircleCount: 12
+    SpiralTurns: 1.5
+    BurstChargeDuration: 0.9
+    BurstInterval: 0.28
+    BurstIntervalDecay: 0.8
+    BurstDamage: 2
+    BurstDamageType: 2
+    BurstEffects:
+      targetHitstop: 0
+      sourceHitstop: 0
+      shakeDuration: 0
+      shakeIntensity: 0
+      globalHitstop: 0
+      globalHitstopScale: 0
+    BurstTelegraphColor: {r: 0.6, g: 0.35, b: 1, a: 1}
+    BurstShakeDuration: 0.12
+    BurstShakeIntensity: 0.08
+    BurstShakeFrequency: 26
+    BurstFinisherShakeMultiplier: 2.2
+    BurstHitStopDuration: 0.07
+    BurstFinisherDistort: 1
+    VanishDuringBurst: 1
+    VanishFadeDuration: 0.35
+    ReappearFadeDuration: 0.3
+    LandingDelay: 0.5
+    RecoveryDuration: 0.4
+    Cooldown: 6
+  TailRain:
+    Phase2Only: 1
+    MinRange: 3
+    MaxRange: 22
+    Cooldown: 18
+    StrikeCount: 5
+    IntroDelay: 0.8
+    TelegraphLead: 0.35
+    JumpDuration: 0.55
+    JumpHeight: 6
+    RecoverDelay: 0.3
+    RecoverDelayJitter: {x: 0, y: 0.45}
+    OutroDelay: 0.7
+    FirstStrikeOnPlayer: 1
+    TargetSpread: 4
+    AoeRadius: 3.5
+    Damage: 1
+    DamageType: 0
+    JumpDodgeHeight: 1.2
+    Effects:
+      targetHitstop: 0
+      sourceHitstop: 0
+      shakeDuration: 0
+      shakeIntensity: 0
+      globalHitstop: 0
+      globalHitstopScale: 0
+    WaveDuration: 0.35
+    WaveInnerRadius: 0.8
+    WaveThickness: 0.6
+    WaveColor: {r: 1, g: 0.3, b: 0.45, a: 1}
+    WaveSpikeDepth: 0
+    WaveScaleRange: {x: 1, y: 1}
+    WaveMaterial: {fileID: 0}
+    TelegraphColor: {r: 1, g: 0.25, b: 0.25, a: 1}
+    TelegraphRadius: 3.5
+    TelegraphAheadCount: 3
+    TelegraphFarAlpha: 0.25
+    TelegraphPulseBoost: 2
+    TelegraphMaterial: {fileID: 0}
+  Down:
+    ShowcaseDuration: 2
+    RiseHeight: 1.2
+    RiseDuration: 0.6
+    TiltStartAngleX: -60
+    TiltAngleX: -90
+    ShakeAmplitude: 0.06
+    ShakeFrequency: 35
+    MaterialFlashInterval: 0.125
+    MaterialFlashTotalDuration: 2
+    MaterialFlashAmount: 0.85
+    MaterialFlashWhite: {r: 1, g: 1, b: 1, a: 1}
+    MaterialFlashRed: {r: 1, g: 0, b: 0, a: 1}
+    IdleBlendDuration: 0.5
+    Duration: 6
+  DebugEnabled: 0
+  ShowRangeRings: 0
+  ShowHitboxes: 0
+  ShowTailAttack: 0
+  ShowHUD: 0
